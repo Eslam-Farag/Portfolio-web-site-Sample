@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Poppins:wght@100;200&family=Roboto:ital@1&display=swap');
+
+* {
+
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+header {
+
+    background-color: rgba(7, 40, 59);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* to make apce between logo and nav itmes*/
+    align-items: center;
+    padding: 10px 200px; /*10px value for top and bottom , 200px for right and left */
+}
+
+.logo {
+
+    text-decoration: none;
+    color: rgb(226, 238, 238);
+    font-size: 1.8em; /* relative to default size in body  , 1em = 16 px */
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic;
+    
+}
+
+.navigation a {
+
+ color: rgb(250, 249, 249);
+ text-decoration: none;
+ text-transform: uppercase;
+ font-size: 1em;
+ font-weight: 500;
+ padding-left: 30px;
+}
+
+.navigation a:hover {
+
+color: chartreuse;
+}
+
+section{
+
+    padding: 100px 200px;
+}
+
+.main {
+
+    width: 100%;
+    min-height: 100vh;  /* vh = view port  */
+    display: flex;
+    align-items: center; /* we use aligh-items after applying display as flex */
+    background: url(images/construction.jpg) no-repeat;
+    background-size: cover;
+    background-position: center ; /* verey important to set image background */
+    background-attachment: fixed; /* good affect while scrolling will be fixed image during scroll */
+    
+}
+
+.main h2 {
+
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+
+}
+
+.main h2 span {
+    display: inline-block; /* in order to control span elemet it should be (display inline block ) */
+    margin-top:10px ;
+    color: rgb(0, 190, 204);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.main-btn {
+
+    color: white;
+    background-color: rgb(67, 67, 226);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block; /* in order to control  elemet*/
+    padding: 0.97375em  2.1875em ;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease; /*very good effect for hovering*/
+}
+
+.main-btn:hover {
+
+    background-color: #0000ffb7;
+    transform: scale(1.1);  /* to increase button size while hovering */
+
+}
+
+
+.social-icons a{
+
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    padding-right: 30px;
+
+}
+
+.title {
+
+    display: flex;
+    justify-content: center;
+    color: rgb(15, 169, 240);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+.content {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(238, 235, 229, 0.863);
+    width: 21em;
+    box-shadow: 0 5px 25px hsl(0, 19%, 92%);
+    margin: 10px;
+    padding: 20px ;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+
+transform: scale(1.1);
+
+}
+
+.icon{
+    color: rgb(18, 132, 238);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+
+    text-align: center;
+}
+
+.info h3 {
+
+    color:  rgb(18, 132, 238);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+
+}
+
+.projects {
+
+    background-color: white;
+}
+
+.project-card {
+    background-color: white;
+    min-height: 14em ;
+    width: 20em;
+    overflow: hidden; /* if there issue with image size */
+    border-radius: 10px;
+    margin: 30px;
+    transition: 0.7s ease;
+
+}
+
+.project-card {
+
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+
+    opacity: 0.9;
+}
+
+.content .project-image {
+
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em ;
+    font-size: 0.7em;
+    font-weight: 100;
+}
+
+.project-category {
+
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.project-title {
+
+    display: flex;
+    justify-content:space-between;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    margin-top: 10px;
+
+}
+
+.more-details {
+
+    text-decoration: none;
+}
+
+.more-details:hover {
+
+    color: orange;
+}
+
+
+.footer {
+    background-color: rgba(13, 44, 80, 0.692);
+    color: white;
+    padding: 2em;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-title {
+
+font-size: 1.3em;
+font-weight: 600;
+}
+
+.footer-title span {
+
+color: rgb(15, 209, 235)
+}
+
+.footer .social-icons a {
+
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(252, 252, 252);
+    padding: 10px;
+
+}
+
+@media (max-width: 1023px) {
+
+        header { 
+
+            padding: 10px 20px;
+        }
+
+        .navigation a {
+
+            padding-left: 10px;
+        }
+
+        .title {
+            font-size: 1.8em;
+        }
+
+        .section {
+
+            padding: 80px 20px ;
+        }
+
+        .main h2 {
+
+            font-size: 1em;
+        }
+
+        .main h3 {
+
+            font-size: 1.5em;
+        }
+
+        .content{
+
+          flex-direction: column;  
+          align-items: center;
+
+        }
+
+}
+
+@media (max: 641px) {
+
+    body{
+        font-size: 12px;
+    }
+
+    .main h2 {
+        font-size: 0.8em;
+    }
+
+    .main h3 {
+        font-size: 1.4em;
+    }
+
+}
+
+
+@media (max: 300px) {
+
+body{
+    font-size: 10px;
+
+}
+
+}
